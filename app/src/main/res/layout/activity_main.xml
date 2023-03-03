@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/tv1"
+        android:text="REGISTRATION"
+        android:textSize="50dp"
+        android:textColor="#F80707"
+        android:textAlignment="center"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rollno"
+        android:textColorHint="@color/black"
+        android:maxLines="1"
+        android:inputType="textPhonetic"
+        android:singleLine="true"
+        android:hint="roll no"
+        android:textSize="25dp"
+        android:textColor="@color/black"
+        android:layout_below="@+id/tv1"
+        android:layout_marginTop="35dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/username"
+        android:textColorHint="@color/black"
+        android:hint="username"
+        android:singleLine="true"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:layout_below="@+id/rollno"
+        android:layout_marginTop="20dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/password"
+        android:singleLine="true"
+        android:inputType="textPassword"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:hint="password"
+        android:textSize="25dp"
+        android:layout_below="@+id/username"
+        android:layout_marginTop="20dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/repassword"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:hint="retype password"
+        android:singleLine="true"
+        android:inputType="textPassword"
+        android:textSize="25dp"
+        android:layout_below="@+id/password"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSignUp"
+        android:text="Register"
+        android:textAllCaps="false"
+        android:layout_below="@+id/repassword"
+        android:backgroundTint="@android:color/holo_blue_dark"
+        android:textSize="25dp"
+        android:layout_marginTop="50dp"
+        app:cornerRadius="36dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSignIn"
+        android:text="Sign In "
+        android:textAllCaps="false"
+        android:layout_below="@+id/btnSignUp"
+        android:backgroundTint="@android:color/holo_green_light"
+        android:textSize="25dp"
+        android:layout_marginTop="20dp"
+        app:cornerRadius="36dp"/>
+</RelativeLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".loginActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv2"
+        android:text="LOGIN"
+        android:textAlignment="center"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/loginroll"
+        android:hint="roll no"
+        android:singleLine="true"
+        android:inputType="textPhonetic"
+        android:layout_below="@+id/tv2"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/black"
+        android:drawablePadding="20dp"
+        android:textColorHint="@color/black"
+        android:textSize="25dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/loginpassword"
+        android:hint="password"
+        android:singleLine="true"
+        android:inputType="textPassword"
+        android:layout_below="@+id/loginroll"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="25dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnLogin"
+        android:text="Login"
+        android:textSize="25dp"
+        android:textAllCaps="false"
+        android:layout_below="@id/loginpassword"
+        android:backgroundTint="@android:color/holo_orange_dark"
+        android:layout_marginTop="50dp"
+        app:cornerRadius="36dp"/>
+
+
+</RelativeLayout>
